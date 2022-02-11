@@ -1,7 +1,7 @@
 import './App.css';
 import Client from './components/client';
-
-import {BrowserRouter, Routes ,Route, NavLink} from 'react-router-dom';
+import Login from './components/login';
+import {BrowserRouter, Routes ,Route} from 'react-router-dom';
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
         Welcome to My Bank
       </h3>
        <Routes>        
-        <Route  exact path='/' element={<Client />}/>     
+        <Route  exact path='/client' element={<Client />}/>  
+        <Route  exact path='/' element={<Login />}/>        
       </Routes>
     </div>
     </BrowserRouter>
